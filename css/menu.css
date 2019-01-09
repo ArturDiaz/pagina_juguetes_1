@@ -1,0 +1,59 @@
+#iconoMenu{
+	display: none;
+}
+
+header label{
+	float: right;
+	font-size: 25px;
+	margin: 3px 0;
+	cursor: pointer;
+}
+
+header .botones{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(222,222,222,0.6);
+	padding-top: 20px;
+	
+	transition: all 0.5s;
+	transform: translateX(-100%);
+}
+header .botones a{
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	color: rgba(10,23,38,1.00);
+	border-bottom: 2px solid rgba(10,23,38,0.6);
+}
+
+header .botones a:hover{
+	background: rgba(10,23,38,0.6);
+}
+
+#iconoMenu:checked ~ .botones{
+	transform: translateX(0%);
+}
+
+@media (min-width:1024px){
+	header .botones{
+		position: static;
+		width: auto;
+		height: auto;
+		background: none;
+		transform: translateX(0%) translateY(-25%);
+		float: right; /*ocupe solo desde la derecha algo corto*/
+		display: flex; /*ubica en en header en linea*/
+		padding-top: 0px;
+
+	}
+	header label{
+		display: none; /*ocultar el icono del menu*/
+	}
+	header .botones a{
+		border: none; /*quitar borde de las etiquetas a*/
+	}
+	
+}

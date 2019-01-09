@@ -1,0 +1,29 @@
+#info{
+	text-align: center;
+	color: #fff;
+}
+
+#info .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+#info img{
+	width: 100%;
+	max-width: 230px;
+	height: 90%;
+	border-radius: 0 20px;
+	border: 5px solid rgba(0,26,47,1); 
+	box-shadow: 2px 2px 5px 2px rgba(0,26,47,0.7);
+}
+
+#info .info-jug{
+	margin: 10px;
+
+}
+
+#info .info-jug img:hover{
+	background-color: rgba(131,183,231,0.5);
+}
